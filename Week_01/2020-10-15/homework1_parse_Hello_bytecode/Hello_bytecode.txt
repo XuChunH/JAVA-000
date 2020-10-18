@@ -1,0 +1,158 @@
+Classfile /Users/xuchunhua/dev/project/java/JAVA-000/Week_01/2020-10-15/homework1_parse_Hello_bytecode/Hello.class
+  Last modified 2020-10-18; size 824 bytes
+  MD5 checksum 2731ba53c7369f943b539aa58562ab25
+  Compiled from "Hello.java"
+public class Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #13.#25        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #26.#27        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Class              #28            // java/lang/StringBuilder
+   #4 = Methodref          #3.#25         // java/lang/StringBuilder."<init>":()V
+   #5 = String             #18            // hello
+   #6 = Methodref          #3.#29         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #7 = Methodref          #3.#30         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #8 = Methodref          #3.#31         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #9 = Methodref          #32.#33        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = Class              #34            // Hello
+  #11 = Methodref          #10.#25        // Hello."<init>":()V
+  #12 = Methodref          #10.#35        // Hello.hello:(I)V
+  #13 = Class              #36            // java/lang/Object
+  #14 = Utf8               <init>
+  #15 = Utf8               ()V
+  #16 = Utf8               Code
+  #17 = Utf8               LineNumberTable
+  #18 = Utf8               hello
+  #19 = Utf8               (I)V
+  #20 = Utf8               StackMapTable
+  #21 = Utf8               main
+  #22 = Utf8               ([Ljava/lang/String;)V
+  #23 = Utf8               SourceFile
+  #24 = Utf8               Hello.java
+  #25 = NameAndType        #14:#15        // "<init>":()V
+  #26 = Class              #37            // java/lang/System
+  #27 = NameAndType        #38:#39        // out:Ljava/io/PrintStream;
+  #28 = Utf8               java/lang/StringBuilder
+  #29 = NameAndType        #40:#41        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #30 = NameAndType        #40:#42        // append:(I)Ljava/lang/StringBuilder;
+  #31 = NameAndType        #43:#44        // toString:()Ljava/lang/String;
+  #32 = Class              #45            // java/io/PrintStream
+  #33 = NameAndType        #46:#47        // println:(Ljava/lang/String;)V
+  #34 = Utf8               Hello
+  #35 = NameAndType        #18:#19        // hello:(I)V
+  #36 = Utf8               java/lang/Object
+  #37 = Utf8               java/lang/System
+  #38 = Utf8               out
+  #39 = Utf8               Ljava/io/PrintStream;
+  #40 = Utf8               append
+  #41 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #42 = Utf8               (I)Ljava/lang/StringBuilder;
+  #43 = Utf8               toString
+  #44 = Utf8               ()Ljava/lang/String;
+  #45 = Utf8               java/io/PrintStream
+  #46 = Utf8               println
+  #47 = Utf8               (Ljava/lang/String;)V
+{
+  public Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public void hello(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: iload_1
+         1: sipush        2000
+         4: iadd
+         5: istore_1
+         6: iload_1
+         7: sipush        10000
+        10: imul
+        11: istore_1
+        12: iload_1
+        13: bipush        10
+        15: idiv
+        16: istore_1
+        17: iload_1
+        18: bipush        10
+        20: if_icmple     48
+        23: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: new           #3                  // class java/lang/StringBuilder
+        29: dup
+        30: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+        33: ldc           #5                  // String hello
+        35: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        38: iload_1
+        39: invokevirtual #7                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        42: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        45: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        48: iconst_0
+        49: istore_2
+        50: iload_2
+        51: iconst_3
+        52: if_icmpge     91
+        55: iload_1
+        56: bipush        10
+        58: idiv
+        59: istore_1
+        60: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        63: new           #3                  // class java/lang/StringBuilder
+        66: dup
+        67: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+        70: ldc           #5                  // String hello
+        72: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        75: iload_1
+        76: invokevirtual #7                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        79: invokevirtual #8                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        82: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        85: iinc          2, 1
+        88: goto          50
+        91: return
+      LineNumberTable:
+        line 4: 0
+        line 6: 6
+        line 8: 12
+        line 10: 17
+        line 11: 23
+        line 14: 48
+        line 15: 55
+        line 16: 60
+        line 14: 85
+        line 18: 91
+      StackMapTable: number_of_entries = 3
+        frame_type = 48 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 40
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: new           #10                 // class Hello
+         5: dup
+         6: invokespecial #11                 // Method "<init>":()V
+         9: iload_1
+        10: invokevirtual #12                 // Method hello:(I)V
+        13: return
+      LineNumberTable:
+        line 21: 0
+        line 22: 2
+        line 24: 13
+}
+SourceFile: "Hello.java"
