@@ -13,6 +13,7 @@
         <module>netty-gateway-httpclient</module>
         <module>netty-gateway-filter</module>
         <module>netty-gateway-nettyclient</module>
+        <module>netty-gateway-router</module>
     </modules>
 
     <parent>
