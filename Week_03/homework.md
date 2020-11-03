@@ -4,4 +4,4 @@
 
 3. netty 做客户端见模块 `netty-gateeway-nettyclient`
 
-4. router 做客户端见模块 `netty-gateeway-router`
+4. router 见模块 `netty-gateeway-router`
