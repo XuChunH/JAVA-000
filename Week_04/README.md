@@ -19,3 +19,4 @@ CompletableFutureSum | 使用 CompletableFuture, 其实 Guava、Spring、Netty �
 
 # 作业2
 
+![](https://raw.githubusercontent.com/XuChunH/JAVA-000/main/Week_04/homework2/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B.png)
