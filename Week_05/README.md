@@ -49,4 +49,6 @@ spring-boot 会自动扫描 application 包下的类, 同样也可以在 xml 文
 3. 有的时候还可以使用 `EnableConfigurationProperties` 等解析配置的注解，通过配置文件提供更灵活的配置方式。使用这种方式的时候，最好在配置文件
  `META_INF/additional-spring-configuration-metadata.json` 里声明一下有哪些配置项，这个是可选的，没有这个也可以跑，但是这个文件可以说明
  有哪些配置、配置的作用、配置的类型，而且 idea 也能做很好的提示。实际的坑：spring-cloud 有些配置项，未在配置文件里声明，导致要阅读全部的源码，才能知道哪些配置项才能用
+ 
+ 简单的原理是, 在应用启动的某个节点，去寻找 `spring.factories` 文件，然后根据 **约定** 去 bean 的装配、注入之类的
 
